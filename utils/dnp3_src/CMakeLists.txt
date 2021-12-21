@@ -84,9 +84,9 @@ endif()
 set(CMAKE_REQUIRED_FLAGS ${CMAKE_CXX_FLAGS})
 
 # include paths for all the local libraries
-include_directories(./cpp/libs/src)
-include_directories(./cpp/libs/include)
-include_directories(./cpp/tests/libs/src)
+include_directories(cpp/libs/src)
+include_directories(cpp/libs/include)
+include_directories(cpp/tests/libs/src)
 
 # ---- openpal library ----
 file(GLOB_RECURSE openpal_SRC cpp/libs/src/openpal/*.cpp cpp/libs/src/openpal/*.h cpp/libs/include/openpal/*.h)
