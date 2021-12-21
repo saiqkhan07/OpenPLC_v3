@@ -89,7 +89,7 @@ include_directories(./cpp/libs/include)
 include_directories(./cpp/tests/libs/src)
 
 # ---- openpal library ----
-file(GLOB_RECURSE openpal_SRC ./cpp/libs/src/openpal/*.cpp ./cpp/libs/src/openpal/*.h ./cpp/libs/include/openpal/*.h)
+file(GLOB_RECURSE openpal_SRC cpp/libs/src/openpal/*.cpp cpp/libs/src/openpal/*.h cpp/libs/include/openpal/*.h)
 add_library(openpal ${LIB_TYPE} ${openpal_SRC})
 install(TARGETS openpal DESTINATION lib)
 set_target_properties(openpal PROPERTIES FOLDER libs)
